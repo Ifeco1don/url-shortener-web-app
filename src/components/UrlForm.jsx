@@ -26,6 +26,7 @@ const UrlForm = ({ setUrls }) => {
       });
 
       const data = await response.json();
+      console.log("API Key:", import.meta.env.VITE_REBRANDLY_API_KEY);
 
       if (data.shortUrl) {
         setUrls((prev) => [
@@ -50,6 +51,7 @@ const UrlForm = ({ setUrls }) => {
   return (
     <form onSubmit={handleSubmit} className="url-form">
       <input
+        name="url"
         type="url"
         placeholder="Paste your long URL here..."
         value={longUrl}
@@ -57,6 +59,7 @@ const UrlForm = ({ setUrls }) => {
         required
       />
       <input
+        name="custom-alias"
         type="text"
         placeholder="Optional custom alias (e.g. my-link)"
         value={customAlias}
