@@ -22,7 +22,7 @@ A modern and responsive web app built with **React + Vite** to shorten long URLs
 ## 🛠️ Tech Stack
 
 - **Frontend:** React + Vite
-- **Styling:** Tailwind CSS
+- **Styling:** CSS
 - **Deployment:** GitHub Pages
 - **API:** Rebrandly URL Shortening API
 
